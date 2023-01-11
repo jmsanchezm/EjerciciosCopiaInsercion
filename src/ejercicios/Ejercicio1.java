@@ -17,12 +17,13 @@ public class Ejercicio1 {
 		numeros [i]= read.nextInt();
 		}
 		
-		numAvanzado [0]= numeros[14];
-		
-		System.arraycopy(numeros, 1, numAvanzado, 1,numAvanzado.length-2);
+		numAvanzado=Arrays.copyOfRange(numeros, 0, numeros.length-1);
+		numAvanzado[0]= numeros[numeros.length-1];
+		System.out.println(Arrays.toString(numeros));
+		System.out.println(Arrays.toString(numAvanzado));
 		
 		read.close();
-		System.out.println(Arrays.toString(numAvanzado));
+		
 	}
 
 }
