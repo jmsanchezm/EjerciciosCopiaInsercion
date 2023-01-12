@@ -16,11 +16,13 @@ public class Ejercicio1 {
 		for (int i=0; i<numeros.length; i++) {
 		numeros [i]= read.nextInt();
 		}
+		System.arraycopy(numeros, 0, numAvanzado, 1, 14);
 		
-		numAvanzado=Arrays.copyOfRange(numeros, 0, numeros.length-1);
 		numAvanzado[0]= numeros[numeros.length-1];
+		
+		numeros= numAvanzado;
+		
 		System.out.println(Arrays.toString(numeros));
-		System.out.println(Arrays.toString(numAvanzado));
 		
 		read.close();
 		
