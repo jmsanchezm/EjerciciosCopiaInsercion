@@ -10,8 +10,8 @@ public class Ejercicio2 {
 		
 		int auxiliar[] = new int[20];
 		
-		int num;
 		int puestopar = 0;
+		
 		int puestoimpar = auxiliar.length - 1;
 		
 		for (int i = 0; i < principal.length; i++) {
