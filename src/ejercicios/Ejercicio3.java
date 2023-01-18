@@ -38,6 +38,7 @@ public class Ejercicio3 {
 		}
 		numeros=numPrimos;
 		System.out.println(Arrays.toString(numeros));
+		read.close();
 	}
 
 }

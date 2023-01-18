@@ -27,6 +27,8 @@ public class Ejercicio2 {
 		}
 		principal=auxiliar;
 		System.out.println(Arrays.toString(principal));
+		
+	
 	}
 
 }
